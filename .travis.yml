@@ -4,4 +4,5 @@ xcode_project: TestTravis.xcodeproj #3
 xcode_scheme: TestTravis #4
 xcode_sdk: iphonesimulator #5
 
-script: xcodebuild clean build -sdk iphonesimulator -workspace TestTravis.xcodeproj -scheme TestTravisTests CODE_SIGNING_REQUIRED=NO
+script:  
+    - xcodebuild $TEST -project "$PROJECT.xcodeproj" -scheme "$SCHEME" -sdk $SDK -destination "$DESTINATION"
