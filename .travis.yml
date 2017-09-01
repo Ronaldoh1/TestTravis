@@ -1,6 +1,2 @@
-language: objective-c 
-osx_image: xcode9 
-xcode_project: TestTravis.xcodeproj
-xcode_scheme: SelfieStyler
-xcode_sdk: iphonesimulator
-os: osx  
+language: objective-c
+osx_image: xcode9
